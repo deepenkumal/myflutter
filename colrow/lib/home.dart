@@ -5,7 +5,9 @@ class Home extends StatelessWidget {
     return Center(
       child: Container(
         color: Colors.pinkAccent,
-        child: Row(
+        child: Column(
+          children: <Widget>[
+        Row(
           children: <Widget>[
          Expanded(
            child:Text
@@ -30,6 +32,38 @@ class Home extends StatelessWidget {
           ),)
         )
           ],
+        ),
+        Row(
+          children: <Widget>[
+         Expanded(
+           child:Text
+          ("Hello column 1",
+          textDirection: TextDirection.ltr,
+           style: TextStyle(
+            decoration: TextDecoration.none,
+            fontSize: 20.5,
+            color:Colors.white,
+          ),),
+        ),
+
+        Expanded(
+          child:Text 
+          ("Hello column 2",
+          
+          textDirection: TextDirection.ltr,
+           style: TextStyle(
+            decoration: TextDecoration.none,
+            fontSize: 20.5,
+            color:Colors.white,
+          ),)
+        )
+          ],
+
+        )
+
+          ],
+          
+          
         ),
       ),
       
